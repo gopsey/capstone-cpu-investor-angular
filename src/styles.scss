@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+$primary-color: #93186C;
+$secondary-color: #FFFFFF;
+$tertiary-color-rgba: rgba(145, 198, 15, 0.4);
+$tertiary-color-hex: #91C60F;
+$background-color: #F1F1F1;
+$warning-color: #ED0000;
+$medium-color: #FCC538;
+$black-color: #000000;
+
+body {
+   background-color: $background-color;
+}

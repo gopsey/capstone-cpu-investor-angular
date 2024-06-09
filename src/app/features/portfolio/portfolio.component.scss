@@ -1,0 +1,15 @@
+@import '../../../styles.scss';
+
+.view-portfolio-activity {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   margin-top: 20px;
+   margin-bottom: 20px;
+
+   .view-portfolio-button {
+      background-color: $primary-color !important;
+      color: $secondary-color !important;
+      margin: auto;
+   }
+}

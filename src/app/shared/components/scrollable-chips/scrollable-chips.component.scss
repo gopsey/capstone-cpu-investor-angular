@@ -1,0 +1,25 @@
+@import '../../../../styles.scss';
+
+.scrollable-chip-wrapper {
+   display: flex;
+   overflow-y: scroll;
+   scrollbar-width: none;
+   margin: 20px 0;
+   gap: 10px;
+
+   .card-chip {
+      background-color: $secondary-color;
+
+      .chip-content {
+         color: $primary-color;
+      }
+   }
+
+   .card-chip.active {
+      background-color: $primary-color;
+
+      .chip-content {
+         color: $secondary-color;
+      }
+   }
+}

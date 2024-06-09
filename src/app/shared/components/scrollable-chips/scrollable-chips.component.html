@@ -1,0 +1,7 @@
+<div class="scrollable-chip-wrapper">
+   <div *ngFor="let chip of scrollableChipData; trackBy: chipId">
+      <mat-chip class="card-chip" [class.active]="chip.isActive" (click)="setChipActive(chip)">
+         <span class="chip-content">{{chip.description}}</span>
+      </mat-chip>
+   </div>
+</div>

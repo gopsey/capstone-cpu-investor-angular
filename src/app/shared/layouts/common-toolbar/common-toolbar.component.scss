@@ -1,0 +1,18 @@
+.bottom-toolbar-wrapper {
+   display: flex;
+   justify-content: space-around;
+   box-shadow: 0 -4px 6px 0 rgba(0, 0, 0, 0.2);
+
+   .toolbar-button {
+      .toolbar-item {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 6px;
+
+         .toolbar-icon-label {
+            font-size: 12px;
+         }
+      }
+   }
+}

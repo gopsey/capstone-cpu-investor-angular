@@ -1,0 +1,24 @@
+<mat-accordion class="accordion-wrapper">
+   @for (accordionItem of accordionData; track accordionItem.key) {
+   <mat-expansion-panel class="expansion-panel mat-elevation-z0" (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false">
+      <mat-expansion-panel-header class="expansion-panel-header">
+         <mat-panel-title class="accordion-panel-title">
+            {{accordionItem.description}}
+         </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-panel-description class="accordion-panel-description">
+         @for (accordionItemData of accordionItem.data; track accordionItemData.key) {
+         <mat-card class="accordion-panel-card">
+            @for (accItem of accordionItemData; track accItem.key) {
+            <div class="accordion-card-info">
+               <span class="accordion-card-info-title">{{accItem.title}}</span>
+               <span class="accordion-card-info-value">{{accItem.value}}</span>
+            </div>
+            }
+         </mat-card>
+         }
+      </mat-panel-description>
+   </mat-expansion-panel>
+   }
+</mat-accordion>

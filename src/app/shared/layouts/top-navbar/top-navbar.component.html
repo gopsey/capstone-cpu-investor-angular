@@ -1,0 +1,34 @@
+@switch (navbarType) {
+@case ('allPortfolios') {
+<div class="top-nav-container">
+   <div class="left-content">
+      <div class="top-navbar-avatar"></div>
+      <div class="top-navbar-content">
+         <span class="greeting">Hello Royce!</span>
+         <span class="greeting-subtext">Welcome to your portfolio</span>
+      </div>
+   </div>
+   <div class="right-content">
+      <div class="top-navbar-search"><mat-icon>search_outlined</mat-icon></div>
+   </div>
+</div>
+}
+@case ('accountTopNav') {
+<div class="top-nav-container">
+   <div class="left-content">
+      <div class="top-navbar-avatar"></div>
+      <div class="top-navbar-content">
+         <span class="greeting">Hello Royce!</span>
+         <span class="greeting-subtext">Welcome to your portfolio</span>
+      </div>
+   </div>
+</div>
+}
+@default {
+   <div class="top-nav-container">
+      <div><mat-icon (click)="navigateToHome()">chevron_left</mat-icon></div>
+      <div class="top-nav-title">{{navbarType}}</div>
+      <div><mat-icon>search_outlined</mat-icon></div>
+   </div>
+}
+}

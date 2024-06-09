@@ -1,0 +1,15 @@
+<mat-list class="simple-list-view-wrapper">
+   @for (listItem of listViewData; track listItem.id) {
+   <div class="simple-list-view-item">
+      <div>
+         <mat-list-item>
+            <mat-icon matListItemIcon class="simple-list-view-icon">{{listItem.activityIcon}}</mat-icon>
+            <div matListItemTitle>{{listItem.activityTitle}}</div>
+            <div matListItemLine>{{listItem.activitySubtext}}.{{listItem.activityDate}}</div>
+         </mat-list-item>
+      </div>
+      <div class="simple-list-view-value" [ngClass]="[listItem.activityStatus]">{{listItem.activityValue}}</div>
+   </div>
+   <mat-divider class="simple-list-view-divider" />
+   }
+</mat-list>

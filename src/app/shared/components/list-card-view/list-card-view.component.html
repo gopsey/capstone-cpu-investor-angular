@@ -1,0 +1,19 @@
+@for (listItem of listCardViewData; track listItem.id) {
+<mat-card class="overview-card" (click)="selectedListCardView(listItem)">
+   <mat-card-content class="card-content">
+      <div class="list-card-start-details">
+         <span>Portfolio {{$index+1}}</span>
+         <span>{{listItem.description}}</span>
+      </div>
+      <div class="list-card-end-details">
+         <div class="list-card-end-content">
+            <span>{{listItem.noOfHoldings}} Holdings</span>
+            <span>{{listItem.portfolioValue}}</span>
+         </div>
+         <div class="list-card-icon">
+            <mat-icon>chevron_right</mat-icon>
+         </div>
+      </div>
+   </mat-card-content>
+</mat-card>
+}

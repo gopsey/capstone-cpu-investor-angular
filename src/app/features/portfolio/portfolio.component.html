@@ -1,0 +1,19 @@
+<div>
+   <app-top-navbar [navbarType]="navbarType" />
+   <app-scrollable-chips [scrollableChipData]="scrollableChipData" (selectedChip)="selectedPortfolio($event)" />
+   <app-overview-card [cardData]="portfolioCardData" [cardType]="cardType" />
+   <app-donut-chart />
+   @if(cardType === 'overview') {
+   <app-list-card-view [listCardViewData]="listCardViewData"
+      (selectedListCardViewItem)="selectedListCardView($event)" />
+   }
+   @if(cardType === 'summary') {
+   <app-scrollable-chips [scrollableChipData]="investmentGroupsChips"
+      (selectedChip)="selectedInvestmentGroup($event)" />
+   <app-simple-list-view [listViewData]="investmentGroupsData" />
+   <div class="view-portfolio-activity">
+      <button mat-flat-button class="view-portfolio-button" (click)="viewPortfolioActivity()">View Activities for this
+         Portfolio</button>
+   </div>
+   }
+</div>

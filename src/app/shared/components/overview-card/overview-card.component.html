@@ -1,0 +1,24 @@
+<mat-card class="overview-card">
+   <mat-card-header>
+      <mat-card-subtitle>{{ cardType === 'overview' ? 'Portfolio Overview' : 'Portfolio Summary / '+cardData.description }}</mat-card-subtitle>
+   </mat-card-header>
+   <mat-card-content class="card-content">
+      <p class="card-value">{{ cardData.portfolioValue }}</p>
+      <mat-divider></mat-divider>
+   </mat-card-content>
+   <mat-card-content>
+      <div class="card-footer">
+         <div class="footer-start">
+            <span class="card-footer-value">{{cardData.stockValue}}</span>
+            <mat-chip class="card-chip">
+               <span class="chip-content">{{cardData.stockPercentage}}</span>
+            </mat-chip>
+         </div>
+         <div class="footer-end">
+            <div *ngIf="cardData.key === 'allPortfolios'">
+               <span class="card-footer-numbers">{{cardData.noOfPortfolios}} portfolios / {{cardData.noOfHoldings}} holdings</span>
+            </div>
+         </div>
+      </div>
+   </mat-card-content>
+</mat-card>

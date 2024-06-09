@@ -1,0 +1,14 @@
+<div>
+   <app-top-navbar [navbarType]="navbarType" />
+   <app-scrollable-chips [scrollableChipData]="scrollableChipData" (selectedChip)="selectedPortfolio($event)" />
+   <div class="activity-actions">
+      <div>
+         <mat-icon class="activity-icon">search_outline</mat-icon>
+      </div>
+      <div class="activity-filters">
+         <mat-icon class="activity-icon">filter_alt_outline</mat-icon>
+         <mat-icon class="activity-icon">calendar_month_outline</mat-icon>
+      </div>
+   </div>
+   <app-simple-list-view [listViewData]="activitiesData" />
+</div>
