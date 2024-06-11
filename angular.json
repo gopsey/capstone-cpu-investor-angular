@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "projects/cpu-investor-computershare",
+            "outputPath": "dist/cpu-investor-computershare",
             "index": "projects/cpu-investor-computershare/src/index.html",
             "browser": "projects/cpu-investor-computershare/src/main.ts",
             "polyfills": [
