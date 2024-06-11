@@ -1,0 +1,46 @@
+@import "../../../../../cpu-investor-computershare/src/styles.scss";
+
+.overview-card {
+   background-color: $secondary-color;
+   border-radius: 16px;
+
+   .card-content {
+      .card-value {
+         color: $primary-color;
+         font-size: 24px;
+         font-weight: 600;
+         margin: 6px 0;
+      }
+   }
+
+   .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 16px;
+
+      .footer-start {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+
+         .card-footer-value {
+            color: $tertiary-color-hex;
+         }
+
+         .card-chip {
+            background-color: $tertiary-color-rgba;
+
+            .chip-content {
+               color: $tertiary-color-hex;
+            }
+         }
+      }
+
+      .footer-end {
+         .card-footer-numbers {
+            font-size: 13px;
+         }
+      }
+   }
+}

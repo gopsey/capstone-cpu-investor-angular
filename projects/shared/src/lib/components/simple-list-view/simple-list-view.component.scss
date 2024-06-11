@@ -1,0 +1,31 @@
+@import '../../../../../cpu-investor-computershare/src/styles.scss';
+
+.simple-list-view-wrapper {
+   background-color: $secondary-color;
+
+   .simple-list-view-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .simple-list-view-icon {
+         color: $primary-color;
+      }
+
+      .simple-list-view-value {
+         margin-right: 16px;
+      }
+      .simple-list-view-value.high {
+         color: $tertiary-color-hex;
+      }
+      .simple-list-view-value.medium {
+         color: $medium-color;
+      }
+      .simple-list-view-value.low {
+         color: $warning-color;
+      }
+   }
+   .simple-list-view-divider:last-child {
+      display: none;
+   }
+}

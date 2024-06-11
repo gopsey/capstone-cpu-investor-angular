@@ -1,0 +1,9 @@
+@import '../../../../../cpu-investor-computershare/src/styles.scss';
+
+#chart {
+   max-width: 380px;
+   margin: 35px auto;
+   padding: 0;
+   background-color: $secondary-color;
+   border-radius: 16px;
+}
