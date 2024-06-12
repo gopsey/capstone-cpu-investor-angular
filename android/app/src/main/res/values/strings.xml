@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">CapstoneCpuInvestorAngular</string>
+    <string name="title_activity_main">CapstoneCpuInvestorAngular</string>
+    <string name="package_name">com.computershare.capstonecpuinvestorangular</string>
+    <string name="custom_url_scheme">com.computershare.capstonecpuinvestorangular</string>
+</resources>

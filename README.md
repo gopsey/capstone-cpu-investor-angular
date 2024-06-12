@@ -11,5 +11,10 @@ Angular Material components
 ng g application my-app
 ng g library my-lib
 npm install @capacitor/angular --force
+npm install @capacitor/core @capacitor/cli
+npx cap init
 ng build CapstoneCpuInvestorAngular --configuration production --aot
 ng serve CapstoneCpuInvestorAngular
+npx cap add android
+npx cap sync (or) npx cap copy (Make sure webDir points to dist -> index.html)
+npx cap open android (Had to enable SVM from bios to run emulator)
