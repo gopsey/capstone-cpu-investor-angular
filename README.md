@@ -12,6 +12,7 @@ ng g application my-app
 ng g library my-lib
 npm install @capacitor/angular --force
 npm install @capacitor/core @capacitor/cli
+npm install @capacitor/android --force
 npx cap init
 ng build CapstoneCpuInvestorAngular --configuration production --aot
 ng serve CapstoneCpuInvestorAngular
